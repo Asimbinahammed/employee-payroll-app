@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = "employee_payroll")
 @Getter
 @Setter
-public class Payroll {
+public class EmployeePayroll {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

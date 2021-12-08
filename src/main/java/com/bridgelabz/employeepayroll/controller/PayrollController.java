@@ -1,13 +1,14 @@
 package com.bridgelabz.employeepayroll.controller;
 
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
+import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
+import com.bridgelabz.employeepayroll.entity.ResponseEntity;
 import com.bridgelabz.employeepayroll.services.PayrollServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
-import com.bridgelabz.employeepayroll.exception.ResourceNotFoundException;
-
 
 /**
  * Purpose : To demonstrate different HTTP methods
@@ -23,26 +24,33 @@ public class PayrollController {
     @Autowired
     private PayrollServices payrollServices;
 
-    @GetMapping(value = "get-all")
-    public List<PayrollDto> getAllpayroll(){
+    @RequestMapping(value = {"", "/"})
+    public ResponseEntity getEmployeePayrollData() {
+        return new ResponseEntity("Get Call Success",null , HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/get-all")
+    public List<PayrollDto> getAllPayroll() {
         return payrollServices.getAllPayroll();
     }
 
     @PostMapping(value = "/add")
-    public String addpayroll(@Valid @RequestBody PayrollDto payrollDto){
-        return payrollServices.addPayroll(payrollDto);
+    public ResponseEntity addPayroll(@Valid @RequestBody PayrollDto payrollDto) {
+        EmployeePayroll empData = payrollServices.addPayroll(payrollDto);
+        return new ResponseEntity("Created Employee Payroll Data for: " , empData, HttpStatus.OK);
     }
 
     @PutMapping(value = "/update/{id}")
-    public String updatepayroll(@Valid
-                            @PathVariable(name = "id") int id,
-                            @RequestBody PayrollDto payrollDto){
-        return payrollServices.updatePayroll(id, payrollDto);
+    public ResponseEntity updatePayroll(
+            @PathVariable(name = "id") @Valid int id,
+            @RequestBody PayrollDto payrollDto) {
+        EmployeePayroll empData = payrollServices.updatePayroll(id, payrollDto);
+        return new ResponseEntity("Updated Employee Payroll Data for: ", empData, HttpStatus.OK);
     }
 
     @DeleteMapping(value = "delete/{id}")
-    public String deletepayroll(@PathVariable(name = "id") int id){
-        return payrollServices.deletePayroll(id);
+    public ResponseEntity deletePayroll(@PathVariable(name = "id") int id) {
+        EmployeePayroll empData = payrollServices.deletePayroll(id);
+        return new ResponseEntity("Created Employee Payroll Data for: ", empData, HttpStatus.OK);
     }
-
 }
