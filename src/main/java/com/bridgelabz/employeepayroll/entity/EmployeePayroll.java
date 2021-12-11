@@ -6,6 +6,13 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * Purpose : To declare inputs for connecting with database.
+ *
+ * @author ASIM AHAMMED
+ * @version : 0.0.1-SNAPSHOT
+ * @since 2021-12-03
+ */
 @Entity
 @Table(name = "employee_payroll")
 @Getter
@@ -17,7 +24,7 @@ public class EmployeePayroll {
     private int id;
 
     private String name;
-    private Character gender;
+    private String gender;
     private long salary;
     @CreationTimestamp
     private Date Start;

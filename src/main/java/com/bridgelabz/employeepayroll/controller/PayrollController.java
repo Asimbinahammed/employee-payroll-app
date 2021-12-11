@@ -29,28 +29,28 @@ public class PayrollController {
         return new ResponseEntity("Get Call Success",null , HttpStatus.OK);
     }
 
-    @GetMapping(value = "/get-all")
+    @GetMapping(value = "/employee")
     public List<PayrollDto> getAllPayroll() {
         return payrollServices.getAllPayroll();
     }
 
-    @PostMapping(value = "/add")
+    @PostMapping(value = "/employee")
     public ResponseEntity addPayroll(@Valid @RequestBody PayrollDto payrollDto) {
         EmployeePayroll empData = payrollServices.addPayroll(payrollDto);
-        return new ResponseEntity("Created Employee Payroll Data for: " , empData, HttpStatus.OK);
+        return new ResponseEntity("Created Employee Payroll Data : " , empData, HttpStatus.OK);
     }
 
-    @PutMapping(value = "/update/{id}")
+    @PutMapping(value = "/employee/{id}")
     public ResponseEntity updatePayroll(
-            @PathVariable(name = "id") @Valid int id,
-            @RequestBody PayrollDto payrollDto) {
+            @PathVariable(name = "id") int id,
+            @Valid @RequestBody PayrollDto payrollDto) {
         EmployeePayroll empData = payrollServices.updatePayroll(id, payrollDto);
-        return new ResponseEntity("Updated Employee Payroll Data for: ", empData, HttpStatus.OK);
+        return new ResponseEntity("Updated Employee Payroll Data : ", empData, HttpStatus.OK);
     }
 
-    @DeleteMapping(value = "delete/{id}")
+    @DeleteMapping(value = "employee/{id}")
     public ResponseEntity deletePayroll(@PathVariable(name = "id") int id) {
         EmployeePayroll empData = payrollServices.deletePayroll(id);
-        return new ResponseEntity("Created Employee Payroll Data for: ", empData, HttpStatus.OK);
+        return new ResponseEntity("Deleted Employee Payroll Data : ", empData, HttpStatus.OK);
     }
 }

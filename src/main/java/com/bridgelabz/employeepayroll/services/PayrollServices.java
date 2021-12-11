@@ -2,12 +2,14 @@ package com.bridgelabz.employeepayroll.services;
 
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
 import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
-import com.bridgelabz.employeepayroll.exception.ResourceNotFoundException;
 import com.bridgelabz.employeepayroll.repository.PayrollRepository;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,18 +28,20 @@ public class PayrollServices {
     @Autowired
     private ModelMapper modelMapper;
 
+    private static final Logger logger = LoggerFactory.getLogger(PayrollServices.class);
+
     /**
-     * purpose :  To list all payroll in database
+     * purpose : To list all payroll in database
      *
-     * @return list : payroll  with car number, cardholder name, CVV for each entry.
+     * @return list : payroll has name, salary & gender for each entry.
      */
     public List<PayrollDto> getAllPayroll() {
+        logger.info("Listing all payroll");
         return payrollRepository
                 .findAll()
                 .stream()
                 .map(employeePayrollData -> {
-                    PayrollDto payrollDto = modelMapper.map(employeePayrollData, PayrollDto.class);
-                    return payrollDto;
+                    return modelMapper.map(employeePayrollData, PayrollDto.class);
                 })
                 .collect(Collectors.toList());
     }
@@ -45,10 +49,11 @@ public class PayrollServices {
     /**
      * Purpose : To add payroll ino database.
      *
-     * @param payrollDto : Input json message to add into database
-     * @return String : Message for success.
+     * @param payrollDto : New payroll entry with name, salary & gender
+     * @return employeePayroll : Data which has name, salary & gender
      */
     public EmployeePayroll addPayroll(PayrollDto payrollDto) {
+        logger.info("Atm adding into database");
         EmployeePayroll employeePayrollData = modelMapper.map(payrollDto, EmployeePayroll.class);
         return payrollRepository.save(employeePayrollData);
     }
@@ -57,11 +62,11 @@ public class PayrollServices {
      * Purpose : To delete payroll from database.
      *
      * @param id : Database id
-     * @return String : Success message if deleted the entry
+     * @return employeePayroll : Data which has name, salary & gender
      */
-    public EmployeePayroll deletePayroll(int id) throws ResourceNotFoundException {
-        EmployeePayroll employeePayroll = payrollRepository.findById(id).orElseThrow(() ->
-                new ResourceNotFoundException("User not found"));
+    public EmployeePayroll deletePayroll(int id)  {
+        logger.info("Atm deleting into database");
+        EmployeePayroll employeePayroll = findDetails(id);
         payrollRepository.delete(employeePayroll);
         return employeePayroll;
     }
@@ -69,15 +74,24 @@ public class PayrollServices {
     /**
      * Purpose : To update payroll entry with new one using id
      *
-     * @param id         : Database id
-     * @param payrollDto : New payroll entry with card number, cardHolder name & CVV
-     * @return String : Success message if updated the entry
+     * @param id : Database id
+     * @param payrollDto : New payroll entry with name, salary & gender
+     * @return employeePayroll : Data which has name, salary & gender
      */
     public EmployeePayroll updatePayroll(int id, PayrollDto payrollDto) {
-        EmployeePayroll employeePayroll = payrollRepository.findById(id).orElseThrow(() ->
-                new ResourceNotFoundException("User not found"));
+        logger.info("Atm updating into database");
+        EmployeePayroll employeePayroll = findDetails(id);
         modelMapper.map(payrollDto, employeePayroll);
         return payrollRepository.save(employeePayroll);
     }
 
+    /**
+     * purpose : To find entry by id if it presents in database
+     *
+     * @param id : Database id
+     * @return employeePayroll : Data which has name, salary & gender or throwing exception
+     */
+    public EmployeePayroll findDetails(int id) {
+        return payrollRepository.findById(id).orElseThrow(EntityNotFoundException::new);
+    }
 }

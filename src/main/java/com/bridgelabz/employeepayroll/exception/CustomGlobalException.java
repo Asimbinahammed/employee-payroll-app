@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -19,9 +20,19 @@ import java.util.stream.Collectors;
 @ControllerAdvice
 public class CustomGlobalException extends ResponseEntityExceptionHandler {
 
-    // error handle for @Valid
+    /**
+     * Purpose : error handle for @Valid.
+     * @param ex : Exception to be thrown when validation on an argument annotated with @Valid fail
+     * @param headers : Pass additional information between the clients and the server through the
+     *                 request and response header.
+     * @param status : Help identify the cause of the problem when a web page or other resource
+     *                 does not load properly.
+     * @param request : Help identify the cause of the problem when a web page or other resource
+     *                  does not load properly.
+     * @return ResponseEntity : Contains message, data & status.
+     */
     @Override
-    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
+    protected ResponseEntity handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
                                                                   HttpHeaders headers,
                                                                   HttpStatus status, WebRequest request) {
 
@@ -41,11 +52,15 @@ public class CustomGlobalException extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(body, headers, status);
     }
 
-    @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity handleResourceNotFoundException(ResourceNotFoundException exception, WebRequest request){
-        ErrorResponse errorResponse = new ErrorResponse(new Date(), exception.getMessage(),
-                request.getDescription(false));
-        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    /**
+     * Purpose : To handle when given id is not found in database.
+     * @param ex: Used when given resource is not present.
+     * @return ResponseEntity : Contains details about exception;string message and http status
+     */
+    @ExceptionHandler(EntityNotFoundException.class)
+    public ResponseEntity handleEntityNotFoundException(EntityNotFoundException ex) {
+        logger.error("Invalid ID");
+        return new ResponseEntity("Given id is Not Found", HttpStatus.BAD_REQUEST);
     }
 
 }
