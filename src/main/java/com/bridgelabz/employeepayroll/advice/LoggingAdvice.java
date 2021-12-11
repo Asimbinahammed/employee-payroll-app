@@ -27,7 +27,6 @@ public class LoggingAdvice {
      */
     @Pointcut(value = "execution (* com.bridgelabz.employeepayroll.services.PayrollServices.*(..))")
     public void myPointCut() {
-
     }
 
     /**

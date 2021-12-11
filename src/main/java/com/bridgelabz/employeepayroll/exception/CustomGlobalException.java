@@ -1,6 +1,5 @@
 package com.bridgelabz.employeepayroll.exception;
 
-import com.bridgelabz.employeepayroll.dto.ErrorResponse;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

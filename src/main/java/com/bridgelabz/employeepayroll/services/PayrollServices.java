@@ -6,6 +6,7 @@ import com.bridgelabz.employeepayroll.repository.PayrollRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,10 @@ public class PayrollServices {
     @Autowired
     private ModelMapper modelMapper;
 
-    private static final Logger logger = LoggerFactory.getLogger(PayrollServices.class);
+    private String ADDED_DATA_SUCCESSFULLY = "ADDED atm into database";
+    private String DELETED_DATA_SUCCESSFULLY = "DELETED atm from database";
+    private String UPDATED_DATA_SUCCESSFULLY = "UPDATED atm in database";
+
 
     /**
      * purpose : To list all payroll in database
@@ -36,7 +40,6 @@ public class PayrollServices {
      * @return list : payroll has name, salary & gender for each entry.
      */
     public List<PayrollDto> getAllPayroll() {
-        logger.info("Listing all payroll");
         return payrollRepository
                 .findAll()
                 .stream()
@@ -52,10 +55,10 @@ public class PayrollServices {
      * @param payrollDto : New payroll entry with name, salary & gender
      * @return employeePayroll : Data which has name, salary & gender
      */
-    public EmployeePayroll addPayroll(PayrollDto payrollDto) {
-        logger.info("Atm adding into database");
+    public String addPayroll(PayrollDto payrollDto) {
         EmployeePayroll employeePayrollData = modelMapper.map(payrollDto, EmployeePayroll.class);
-        return payrollRepository.save(employeePayrollData);
+         payrollRepository.save(employeePayrollData);
+         return ADDED_DATA_SUCCESSFULLY;
     }
 
     /**
@@ -64,11 +67,10 @@ public class PayrollServices {
      * @param id : Database id
      * @return employeePayroll : Data which has name, salary & gender
      */
-    public EmployeePayroll deletePayroll(int id)  {
-        logger.info("Atm deleting into database");
+    public String deletePayroll(int id)  {
         EmployeePayroll employeePayroll = findDetails(id);
         payrollRepository.delete(employeePayroll);
-        return employeePayroll;
+        return DELETED_DATA_SUCCESSFULLY;
     }
 
     /**
@@ -78,11 +80,11 @@ public class PayrollServices {
      * @param payrollDto : New payroll entry with name, salary & gender
      * @return employeePayroll : Data which has name, salary & gender
      */
-    public EmployeePayroll updatePayroll(int id, PayrollDto payrollDto) {
-        logger.info("Atm updating into database");
+    public String updatePayroll(int id, PayrollDto payrollDto) {
         EmployeePayroll employeePayroll = findDetails(id);
-        modelMapper.map(payrollDto, employeePayroll);
-        return payrollRepository.save(employeePayroll);
+        BeanUtils.copyProperties(payrollDto, employeePayroll);
+        payrollRepository.save(employeePayroll);
+        return UPDATED_DATA_SUCCESSFULLY;
     }
 
     /**
