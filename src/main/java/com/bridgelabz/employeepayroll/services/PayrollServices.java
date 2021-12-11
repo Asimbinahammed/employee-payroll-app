@@ -29,10 +29,9 @@ public class PayrollServices {
     @Autowired
     private ModelMapper modelMapper;
 
-    private String ADDED_DATA_SUCCESSFULLY = "ADDED atm into database";
-    private String DELETED_DATA_SUCCESSFULLY = "DELETED atm from database";
-    private String UPDATED_DATA_SUCCESSFULLY = "UPDATED atm in database";
-
+    public String ADDED_DATA_SUCCESSFULLY = "ADDED atm into database";
+    public String DELETED_DATA_SUCCESSFULLY = "DELETED atm from database";
+    public String UPDATED_DATA_SUCCESSFULLY = "UPDATED atm in database";
 
     /**
      * purpose : To list all payroll in database
@@ -53,7 +52,7 @@ public class PayrollServices {
      * Purpose : To add payroll ino database.
      *
      * @param payrollDto : New payroll entry with name, salary & gender
-     * @return employeePayroll : Data which has name, salary & gender
+     * @return String : Success message for adding data into database.
      */
     public String addPayroll(PayrollDto payrollDto) {
         EmployeePayroll employeePayrollData = modelMapper.map(payrollDto, EmployeePayroll.class);
@@ -65,7 +64,7 @@ public class PayrollServices {
      * Purpose : To delete payroll from database.
      *
      * @param id : Database id
-     * @return employeePayroll : Data which has name, salary & gender
+     * @return String : Success message for deleting data from database.
      */
     public String deletePayroll(int id)  {
         EmployeePayroll employeePayroll = findDetails(id);
@@ -78,7 +77,7 @@ public class PayrollServices {
      *
      * @param id : Database id
      * @param payrollDto : New payroll entry with name, salary & gender
-     * @return employeePayroll : Data which has name, salary & gender
+     * @return String : Success message for updating data in database.
      */
     public String updatePayroll(int id, PayrollDto payrollDto) {
         EmployeePayroll employeePayroll = findDetails(id);
