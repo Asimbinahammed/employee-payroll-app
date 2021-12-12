@@ -13,6 +13,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
+
+import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -92,27 +94,6 @@ public class PayrollServicesTest {
     }
 
     @Test
-    void givenPayrollDto_whenCalledAddPayroll_shouldReturnListOfPayrollDto() {
-        String successMessage = "ADDED atm into database";
-        PayrollDto payrollDto = new PayrollDto();
-        payrollDto.setName("Asim Ahammed");
-        payrollDto.setGender("F");
-        payrollDto.setSalary(321000);
-
-        EmployeePayroll employeePayroll = new EmployeePayroll();
-        employeePayroll.setId(1);
-        employeePayroll.setName("Asim Ahammed");
-        employeePayroll.setGender("F");
-        employeePayroll.setSalary(321000);
-        employeePayroll.setStart(LocalDateTime.now());
-
-        when(modelMapper.map(payrollDto, EmployeePayroll.class)).thenReturn(employeePayroll);
-        String actualMessage = payrollServices.addPayroll(payrollDto);
-        Assertions.assertEquals(successMessage, actualMessage);
-        verify(payrollRepository, times(1)).save(employeePayroll);
-    }
-
-    @Test
     void givenIdAndPayrollDto_whenCalledUpdatePayroll_shouldReturnSuccessMessage() {
         int id = 1;
         ArgumentCaptor<EmployeePayroll> employeePayrollArgumentCaptor = ArgumentCaptor.forClass(EmployeePayroll.class);
@@ -137,6 +118,25 @@ public class PayrollServicesTest {
         Assertions.assertEquals(payrollDto.getName(), employeePayrollArgumentCaptor.getValue().getName());
         Assertions.assertEquals(payrollDto.getSalary(), employeePayrollArgumentCaptor.getValue().getSalary());
         Assertions.assertEquals(payrollDto.getGender(), employeePayrollArgumentCaptor.getValue().getGender());
+    }
+
+    @Test
+    void givenIdAndPayrollDto_whenCalledUpdatePayroll_shouldThrowEntityNotFoundException() {
+        int id = 1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("M");
+        payrollDto.setSalary(321000);
+
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("M");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.updatePayroll(id, payrollDto));
     }
 
 }
