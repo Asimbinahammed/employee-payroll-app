@@ -21,6 +21,7 @@ import java.util.List;
 @RequestMapping(value = "/payroll")
 public class PayrollController {
     public String welcomeMessage = "Success, Welcome to employee payroll app";
+    public String getAddressMessage = "The address for the given id is here : ";
 
     @Autowired
     private PayrollServices payrollServices;
@@ -30,7 +31,7 @@ public class PayrollController {
      * @return ResponseEntity : Having welcomes message.
      */
     @RequestMapping(value = {"", "/"})
-    public ResponseEntity getEmployeePayrollData() {
+    public ResponseEntity getWelcomeMessage() {
         return new ResponseEntity(welcomeMessage,null , HttpStatus.OK);
     }
 
@@ -78,7 +79,22 @@ public class PayrollController {
      */
     @DeleteMapping(value = "employee/{id}")
     public ResponseEntity deletePayroll(@PathVariable(name = "id") int id) {
+        PayrollDto payrollDto = payrollServices.getPayroll(id);
         String deleteMessage = payrollServices.deletePayroll(id);
-        return new ResponseEntity(deleteMessage, null, HttpStatus.OK);
+        return new ResponseEntity(deleteMessage, payrollDto, HttpStatus.OK);
     }
+
+    /**
+     * Purpose : To get one entry from database
+     *
+     * @param id : Database id which has tobe shown.
+     * @return ResponseEntity : Having success message, data &
+     * success status response code indicates that the request has succeeded.
+     */
+    @GetMapping(value = "/address/{id}")
+    public ResponseEntity getPayroll(@PathVariable(name = "id") int id) {
+        PayrollDto payrollDto = payrollServices.getPayroll(id);
+        return new ResponseEntity(getAddressMessage, payrollDto, HttpStatus.OK);
+    }
+
 }

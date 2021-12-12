@@ -9,10 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -27,7 +25,7 @@ public class PayrollControllerTest {
     void whenCalledGetEmployeePayrollData_shouldReturnResponseEntity() {
         String successMessage = "Success, Welcome to employee payroll app";
         ResponseEntity responseEntity = payrollController
-                .getEmployeePayrollData();
+                .getWelcomeMessage();
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
     }
 
@@ -81,11 +79,29 @@ public class PayrollControllerTest {
     }
 
     @Test
-    void givenPayrollDto_whenCalledDeletePayroll_shouldReturnResponseEntity() {
+    void givenId_whenCalledDeletePayroll_shouldReturnResponseEntity() {
         String successMessage = "DELETED atm from database";
         int id =1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("M");
+        payrollDto.setSalary(23455);
+        when(payrollServices.getPayroll(id)).thenReturn(payrollDto);
         when(payrollServices.deletePayroll(id)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.deletePayroll(id);
+        Assertions.assertEquals(successMessage, responseEntity.getMessage());
+    }
+
+    @Test
+    void givenId_whenCalledGetPayroll_shouldReturnResponseEntity() {
+        String successMessage = "The address for the given id is here : ";
+        int id =1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("M");
+        payrollDto.setSalary(23455);
+        when(payrollServices.getPayroll(id)).thenReturn(payrollDto);
+        ResponseEntity responseEntity = payrollController.getPayroll(id);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
     }
 }

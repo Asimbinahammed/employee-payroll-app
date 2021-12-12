@@ -5,9 +5,6 @@ import com.bridgelabz.employeepayroll.dto.PayrollDto;
 import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
 import com.bridgelabz.employeepayroll.repository.PayrollRepository;
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,9 +29,9 @@ public class PayrollServices {
     @Autowired
     private PayrollBuilder payrollBuilder;
 
-    public String ADDED_DATA_SUCCESSFULLY = "ADDED atm into database";
-    public String DELETED_DATA_SUCCESSFULLY = "DELETED atm from database";
-    public String UPDATED_DATA_SUCCESSFULLY = "UPDATED atm in database";
+    public String ADDED_DATA_SUCCESSFULLY = "ADDED payroll into database";
+    public String DELETED_DATA_SUCCESSFULLY = "DELETED payroll from database";
+    public String UPDATED_DATA_SUCCESSFULLY = "UPDATED payroll in database";
 
     /**
      * purpose : To list all payroll in database
@@ -97,5 +94,16 @@ public class PayrollServices {
      */
     public EmployeePayroll findDetails(int id) {
         return payrollRepository.findById(id).orElseThrow(EntityNotFoundException::new);
+    }
+
+    /**
+     * purpose : To find entry by id if it presents in database
+     *
+     * @param id : Database id.
+     * @return address : Data which has address details.
+     */
+    public PayrollDto getPayroll(int id) {
+        EmployeePayroll employeePayroll = findDetails(id);
+        return modelMapper.map(employeePayroll, PayrollDto.class);
     }
 }

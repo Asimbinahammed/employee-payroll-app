@@ -74,7 +74,7 @@ public class PayrollServicesTest {
 
     @Test
     void givenPayrollDto_whenCalledAddPayroll_shouldReturnSuccessMessage() {
-        String successMessage = "ADDED atm into database";
+        String successMessage = "ADDED payroll into database";
         PayrollDto payrollDto = new PayrollDto();
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("F");
@@ -97,7 +97,7 @@ public class PayrollServicesTest {
     void givenIdAndPayrollDto_whenCalledUpdatePayroll_shouldReturnSuccessMessage() {
         int id = 1;
         ArgumentCaptor<EmployeePayroll> employeePayrollArgumentCaptor = ArgumentCaptor.forClass(EmployeePayroll.class);
-        String expectedMessage = "UPDATED atm in database";
+        String expectedMessage = "UPDATED payroll in database";
         PayrollDto payrollDto = new PayrollDto();
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
@@ -140,8 +140,8 @@ public class PayrollServicesTest {
     }
 
     @Test
-    void givenId_whenCalledDelete_shouldReturnSuccessMessage() {
-        String successMessage = "DELETED atm from database";
+    void givenId_whenCalledDeletePayroll_shouldReturnSuccessMessage() {
+        String successMessage = "DELETED payroll from database";
         int id = 1;
         PayrollDto payrollDto = new PayrollDto();
         payrollDto.setName("Asim Ahammed");
@@ -159,5 +159,41 @@ public class PayrollServicesTest {
         String actualMessage = payrollServices.deletePayroll(id);
         Assertions.assertEquals(successMessage, actualMessage);
         verify(payrollRepository, times(1)).delete(employeePayroll);
+    }
+
+    @Test
+    void givenId_whenCalledGetPayroll_shouldReturnPayrollDto() {
+        int id = 1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("F");
+        payrollDto.setSalary(321000);
+
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("F");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
+        when(modelMapper.map(employeePayroll, PayrollDto.class)).thenReturn(payrollDto);
+        PayrollDto actualMessage = payrollServices.getPayroll(id);
+        Assertions.assertEquals(payrollDto, actualMessage);
+    }
+
+    @Test
+    void givenId_whenCalledFindDetails_shouldReturnEmployeePayroll() {
+        int id = 1;
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("F");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
+        EmployeePayroll actualResult = payrollServices.findDetails(id);
+        Assertions.assertEquals(employeePayroll, actualResult);
     }
 }
