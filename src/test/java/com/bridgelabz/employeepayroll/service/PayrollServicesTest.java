@@ -139,4 +139,25 @@ public class PayrollServicesTest {
         Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.updatePayroll(id, payrollDto));
     }
 
+    @Test
+    void givenId_whenCalledDelete_shouldReturnSuccessMessage() {
+        String successMessage = "DELETED atm from database";
+        int id = 1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("F");
+        payrollDto.setSalary(321000);
+
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("F");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
+        String actualMessage = payrollServices.deletePayroll(id);
+        Assertions.assertEquals(successMessage, actualMessage);
+        verify(payrollRepository, times(1)).delete(employeePayroll);
+    }
 }
