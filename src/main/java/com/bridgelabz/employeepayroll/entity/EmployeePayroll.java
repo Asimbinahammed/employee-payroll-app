@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * Purpose : To declare inputs for connecting with database.
@@ -26,6 +26,6 @@ public class EmployeePayroll {
     private String gender;
     private long salary;
     @CreationTimestamp
-    private Date Start;
+    private LocalDateTime Start;
 
 }

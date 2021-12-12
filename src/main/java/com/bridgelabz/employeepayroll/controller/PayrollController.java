@@ -78,8 +78,7 @@ public class PayrollController {
      */
     @DeleteMapping(value = "employee/{id}")
     public ResponseEntity deletePayroll(@PathVariable(name = "id") int id) {
-        EmployeePayroll empData = payrollServices.findDetails(id);
         String deleteMessage = payrollServices.deletePayroll(id);
-        return new ResponseEntity(deleteMessage, empData, HttpStatus.OK);
+        return new ResponseEntity(deleteMessage, null, HttpStatus.OK);
     }
 }

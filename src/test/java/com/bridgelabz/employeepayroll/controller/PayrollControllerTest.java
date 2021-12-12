@@ -63,6 +63,7 @@ public class PayrollControllerTest {
         when(payrollServices.addPayroll(payrollDto)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.addPayroll(payrollDto);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
+        Assertions.assertEquals(payrollDto, responseEntity.getData());
     }
 
     @Test
@@ -76,6 +77,7 @@ public class PayrollControllerTest {
         when(payrollServices.updatePayroll(id, payrollDto)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.updatePayroll(id, payrollDto);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
+        Assertions.assertEquals(payrollDto, responseEntity.getData());
     }
 
     @Test

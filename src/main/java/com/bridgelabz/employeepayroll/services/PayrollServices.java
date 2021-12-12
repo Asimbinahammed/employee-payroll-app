@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayroll.services;
 
+import com.bridgelabz.employeepayroll.builder.PayrollBuilder;
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
 import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
 import com.bridgelabz.employeepayroll.repository.PayrollRepository;
@@ -28,6 +29,8 @@ public class PayrollServices {
     private PayrollRepository payrollRepository;
     @Autowired
     private ModelMapper modelMapper;
+    @Autowired
+    private PayrollBuilder payrollBuilder;
 
     public String ADDED_DATA_SUCCESSFULLY = "ADDED atm into database";
     public String DELETED_DATA_SUCCESSFULLY = "DELETED atm from database";
@@ -81,7 +84,7 @@ public class PayrollServices {
      */
     public String updatePayroll(int id, PayrollDto payrollDto) {
         EmployeePayroll employeePayroll = findDetails(id);
-        BeanUtils.copyProperties(payrollDto, employeePayroll);
+        employeePayroll = payrollBuilder.buildPayrollEntity(payrollDto, employeePayroll);
         payrollRepository.save(employeePayroll);
         return UPDATED_DATA_SUCCESSFULLY;
     }
