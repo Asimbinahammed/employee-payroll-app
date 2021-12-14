@@ -42,4 +42,15 @@ public class PayrollControllerIntegrationTest {
                 .andExpect(status().isOk());
     }
 
+    @Test
+    void addPayrollTest() throws Exception {
+        when(payrollService.addPayroll(any())).thenReturn("success");
+        mockMvc.perform(MockMvcRequestBuilders
+                        .post("/payroll/employee")
+                .content("{\"name\":\"Manu\",\"gender\":\"M\",\"salary\":\"120000\",\"imagePath\":\"asdf.png\"," +
+                        "\"department\":\"CS\",\"notes\":\"HardWorking\"}")
+                .contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(status().isOk());
+    }
+
 }

@@ -70,6 +70,9 @@ public class PayrollServicesTest {
         payroll2.setName("Messi");
         payroll2.setGender("M");
         payroll2.setSalary(524000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         payroll2.setStart(LocalDateTime.now());
         payrollList.add(payroll2);
 
