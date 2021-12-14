@@ -30,10 +30,13 @@ public class PayrollDto {
     private long salary;
 //    @Pattern(regexp = "  ([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)",
 //            message = "image path  contains file location of image")
+    @NotNull
     private String imagePath;
     @Pattern(regexp = "[a-zA-Z]+[\\s]?[a-zA-Z ]+$",
             message = "Department Only contains alphabets")
+    @NotNull
     private String department;
+    @NotNull
     private String notes;
 
 
