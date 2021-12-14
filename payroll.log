@@ -195,3 +195,547 @@
 2021-12-15 01:24:22:570 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
 2021-12-15 01:24:22:570 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
 2021-12-15 01:24:22:601 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 4.342 seconds (JVM running for 5.688)
+2021-12-15 01:37:03:430 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 8900 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:37:03:435 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:37:04:464 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:37:04:467 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:37:04:502 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:37:04:503 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:04:503 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:04:503 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:04:504 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:37:04:505 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:37:04:505 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:04:506 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:05:083 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:37:06:330 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:37:06:331 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:37:06:346 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 4 ms
+2021-12-15 01:37:06:385 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:37:06:408 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:37:06:420 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:37:06:662 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:37:06:665 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:37:06:668 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:37:06:670 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:37:06:673 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:37:06:675 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:37:06:678 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:37:06:681 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:37:06:707 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 3.799 seconds (JVM running for 5.386)
+2021-12-15 01:37:37:343 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 11388 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:37:37:345 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:37:38:541 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:37:38:544 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:37:38:571 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:37:38:572 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:38:573 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:38:573 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:38:573 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:37:38:573 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:37:38:573 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:38:574 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:39:189 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:37:40:768 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:37:40:771 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:37:40:780 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 8 ms
+2021-12-15 01:37:40:820 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:37:40:856 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:37:40:871 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:37:41:171 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:37:41:175 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:37:41:179 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:37:41:184 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:37:41:188 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:37:41:192 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:37:41:195 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:37:41:198 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:37:41:230 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 4.399 seconds (JVM running for 5.73)
+2021-12-15 01:37:41:344 [WARN] [main] [org.springframework.web.servlet.PageNotFound:209] Request method 'GET' not supported
+2021-12-15 01:37:44:986 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 280 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:37:44:988 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:37:46:067 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:37:46:069 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:37:46:105 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:37:46:106 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:46:106 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:46:107 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:46:107 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:37:46:107 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:37:46:107 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:46:108 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:37:46:704 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:37:48:094 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:37:48:094 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:37:48:096 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 1 ms
+2021-12-15 01:37:48:135 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:37:48:163 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:37:48:180 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:37:48:460 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:37:48:463 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:37:48:466 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:37:48:468 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:37:48:471 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:37:48:476 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:37:48:478 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:37:48:481 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:37:48:509 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 4.116 seconds (JVM running for 5.669)
+2021-12-15 01:37:48:613 [WARN] [main] [org.springframework.web.servlet.PageNotFound:209] Request method 'GET' not supported
+2021-12-15 01:48:06:282 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeeEmployeePayrollApplicationTests:55] Starting EmployeeEmployeePayrollApplicationTests using Java 17 on DESKTOP-2I0J1B5 with PID 16168 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:48:06:288 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeeEmployeePayrollApplicationTests:659] No active profile set, falling back to default profiles: default
+2021-12-15 01:48:07:808 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 01:48:07:897 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2021-12-15 01:48:08:287 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:48:08:328 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:48:08:331 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:08:331 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:08:332 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:08:332 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:48:08:333 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:48:08:333 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:08:432 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:48:08:812 [WARN] [main] [org.springframework.web.context.support.GenericWebApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-15 01:48:08:823 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-15 01:48:08:887 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-15 01:48:08:949 [ERROR] [main] [org.springframework.test.context.TestContextManager:252] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@327af41b] to prepare test instance [com.bridgelabz.employeepayroll.EmployeeEmployeePayrollApplicationTests@1ef31f71]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 67 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 101 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:253)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:194)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 102 common frames omitted
+2021-12-15 01:48:15:096 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 6200 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:48:15:109 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:659] No active profile set, falling back to default profiles: default
+2021-12-15 01:48:16:474 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 01:48:16:558 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2021-12-15 01:48:16:905 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:48:16:935 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:48:16:937 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:48:16:938 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:48:16:938 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:16:938 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:48:16:939 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:48:16:940 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:48:17:011 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:48:18:079 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 01:48:18:135 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-15 01:48:18:136 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-15 01:48:18:280 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-15 01:48:18:280 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 3069 ms
+2021-12-15 01:48:18:390 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-15 01:48:18:395 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-15 01:48:18:446 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-15 01:48:18:469 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-15 01:49:29:578 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 20852 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:49:29:582 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:659] No active profile set, falling back to default profiles: default
+2021-12-15 01:49:31:014 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 01:49:31:092 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021-12-15 01:49:31:446 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:49:31:479 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:49:31:481 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:49:31:482 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:49:31:482 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:49:31:483 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:49:31:483 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:49:31:484 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:49:31:561 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:49:32:388 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 01:49:32:405 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-15 01:49:32:406 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-15 01:49:32:549 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-15 01:49:32:550 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2873 ms
+2021-12-15 01:49:32:670 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-15 01:49:32:676 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-15 01:49:32:725 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-15 01:49:32:772 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-15 01:50:22:328 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 4080 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:50:22:333 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:659] No active profile set, falling back to default profiles: default
+2021-12-15 01:50:23:739 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 01:50:23:823 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2021-12-15 01:50:24:191 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:50:24:222 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:50:24:225 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:24:225 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:24:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:50:24:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:50:24:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:24:227 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:50:24:289 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:50:25:038 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 01:50:25:047 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-15 01:50:25:048 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-15 01:50:25:165 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-15 01:50:25:166 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2765 ms
+2021-12-15 01:50:25:262 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-15 01:50:25:266 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-15 01:50:25:290 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-15 01:50:25:323 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-15 01:50:50:443 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 19960 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:50:50:448 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:663] The following profiles are active: dev
+2021-12-15 01:50:52:015 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-15 01:50:52:097 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2021-12-15 01:50:52:402 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:50:52:434 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:50:52:437 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:52:438 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:52:438 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:50:52:439 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:50:52:440 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:50:52:440 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:50:52:440 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:50:52:522 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:50:53:259 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-15 01:50:53:274 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-15 01:50:53:274 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-15 01:50:53:434 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-15 01:50:53:435 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2918 ms
+2021-12-15 01:50:53:537 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-15 01:50:53:541 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-15 01:50:53:553 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-15 01:50:53:588 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2021-12-15 01:50:53:588 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2021-12-15 01:50:53:589 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2021-12-15 01:50:53:590 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2021-12-15 01:50:53:591 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2021-12-15 01:50:53:592 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2021-12-15 01:50:53:595 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2021-12-15 01:50:53:602 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2021-12-15 01:50:54:177 [INFO] [main] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-15 01:50:54:349 [INFO] [main] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-15 01:50:54:560 [INFO] [main] [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-15 01:50:54:742 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2021-12-15 01:50:54:748 [WARN] [main] [com.zaxxer.hikari.util.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-15 01:50:55:706 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2021-12-15 01:50:55:761 [INFO] [main] [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-15 01:50:57:871 [INFO] [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-15 01:50:57:887 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-15 01:50:58:798 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-15 01:50:59:769 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-15 01:50:59:771 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:50:59:794 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:50:59:808 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:51:00:127 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:51:00:130 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:51:00:132 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:51:00:135 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:51:00:138 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:51:00:141 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:51:00:146 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:51:00:149 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:51:00:183 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 10.328 seconds (JVM running for 10.968)
+2021-12-15 01:51:11:865 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-15 01:51:11:865 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2021-12-15 01:51:11:867 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2021-12-15 01:51:11:919 [INFO] [http-nio-8080-exec-1] [com.bridgelabz.employeepayroll.advice.LoggingAdvice:46] Method invoked: class com.bridgelabz.employeepayroll.services.PayrollServices : getAllPayroll()arguments : []
+2021-12-15 01:51:12:785 [INFO] [http-nio-8080-exec-1] [com.bridgelabz.employeepayroll.advice.LoggingAdvice:49] class com.bridgelabz.employeepayroll.services.PayrollServices : getAllPayroll()Response : [PayrollDto(name=Chandler, gender=F, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=Ross, gender=F, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=arun, gender=M, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=Madhu, gender=M, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=Manu, gender=M, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=Manu, gender=M, salary=120000, imagePath=null, department=null, notes=null), PayrollDto(name=Manu, gender=M, salary=120000, imagePath=./jpg, department=CS, notes=HardWorking), PayrollDto(name=Manu, gender=M, salary=120000, imagePath=asdf.png, department=CS, notes=HardWorking)]
+2021-12-15 01:52:21:790 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 13268 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:52:21:793 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:52:22:935 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:52:22:938 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:52:22:958 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:52:22:959 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:52:22:959 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:52:22:959 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:52:22:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:52:22:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:52:22:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:52:22:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:52:23:499 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:52:24:764 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:52:24:765 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:52:24:767 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 2 ms
+2021-12-15 01:52:24:807 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:52:24:832 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:52:24:846 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:52:25:105 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:52:25:108 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:52:25:111 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:52:25:113 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:52:25:116 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:52:25:119 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:52:25:123 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:52:25:126 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:52:25:157 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 3.886 seconds (JVM running for 5.323)
+2021-12-15 01:52:25:250 [WARN] [main] [org.springframework.web.servlet.PageNotFound:209] Request method 'GET' not supported
+2021-12-15 01:56:33:882 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 3308 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:56:33:884 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:56:34:939 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:56:34:943 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:56:34:969 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:56:34:970 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:34:970 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:34:971 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:34:971 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:56:34:971 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:56:34:971 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:34:972 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:35:561 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:56:36:849 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:56:36:849 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:56:36:851 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 1 ms
+2021-12-15 01:56:36:891 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:56:36:913 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:56:36:922 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:56:37:190 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:56:37:193 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:56:37:196 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:56:37:198 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:56:37:202 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:56:37:204 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:56:37:207 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:56:37:210 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:56:37:237 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 3.907 seconds (JVM running for 5.288)
+2021-12-15 01:56:48:006 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 8300 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:56:48:009 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:56:49:154 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:56:49:158 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:56:49:186 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:56:49:187 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:49:187 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:49:187 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:49:187 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:56:49:187 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:56:49:188 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:49:188 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:49:742 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:56:51:091 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:56:51:091 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:56:51:093 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 1 ms
+2021-12-15 01:56:51:127 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:56:51:152 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:56:51:165 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:56:51:398 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:56:51:401 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:56:51:406 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:56:51:410 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:56:51:414 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:56:51:418 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:56:51:420 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:56:51:422 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:56:51:455 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 3.938 seconds (JVM running for 5.308)
+2021-12-15 01:56:55:164 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:55] Starting PayrollControllerIntegrationTest using Java 17 on DESKTOP-2I0J1B5 with PID 4588 (started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-15 01:56:55:166 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:663] The following profiles are active: test
+2021-12-15 01:56:56:293 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-15 01:56:56:297 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-12-15 01:56:56:323 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-15 01:56:56:324 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:56:324 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:56:324 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:56:324 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-15 01:56:56:325 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-15 01:56:56:325 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-test.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:56:325 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-15 01:56:56:943 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-15 01:56:58:302 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2021-12-15 01:56:58:304 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2021-12-15 01:56:58:306 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 2 ms
+2021-12-15 01:56:58:345 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-15 01:56:58:367 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-15 01:56:58:384 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2021-12-15 01:56:58:666 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingGET_1
+2021-12-15 01:56:58:668 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingHEAD_1
+2021-12-15 01:56:58:671 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPOST_1
+2021-12-15 01:56:58:673 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPUT_1
+2021-12-15 01:56:58:694 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingPATCH_1
+2021-12-15 01:56:58:698 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingDELETE_1
+2021-12-15 01:56:58:702 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingOPTIONS_1
+2021-12-15 01:56:58:706 [INFO] [main] [springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: getWelcomeMessageUsingTRACE_1
+2021-12-15 01:56:58:739 [INFO] [main] [com.bridgelabz.employeepayroll.integration.PayrollControllerIntegrationTest:61] Started PayrollControllerIntegrationTest in 4.052 seconds (JVM running for 5.729)

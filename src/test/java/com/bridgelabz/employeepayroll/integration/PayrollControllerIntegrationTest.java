@@ -78,4 +78,20 @@ public class PayrollControllerIntegrationTest {
                 .delete("/payroll/employee/1"))
                 .andExpect(status().isOk());
     }
+
+    @Test
+    void getPayrollTest() throws Exception {
+        int id = 1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("F");
+        payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
+        when(payrollService.getPayroll(id)).thenReturn(payrollDto);
+        mockMvc.perform(MockMvcRequestBuilders
+                .get("/payroll/employee/1"))
+                .andExpect(status().isOk());
+    }
 }

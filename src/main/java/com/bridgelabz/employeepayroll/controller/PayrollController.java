@@ -91,7 +91,7 @@ public class PayrollController {
      * @return ResponseEntity : Having success message, data &
      * success status response code indicates that the request has succeeded.
      */
-    @GetMapping(value = "/address/{id}")
+    @GetMapping(value = "/employee/{id}")
     public ResponseEntity getPayroll(@PathVariable(name = "id") int id) {
         PayrollDto payrollDto = payrollServices.getPayroll(id);
         return new ResponseEntity(getAddressMessage, payrollDto, HttpStatus.OK);
