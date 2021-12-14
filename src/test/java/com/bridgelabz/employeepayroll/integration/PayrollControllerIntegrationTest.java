@@ -53,4 +53,21 @@ public class PayrollControllerIntegrationTest {
                 .andExpect(status().isOk());
     }
 
+    @Test
+    void updatePayroll() throws Exception {
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Manu");
+        payrollDto.setGender("M");
+        payrollDto.setSalary(120000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("CS");
+        payrollDto.setNotes("HardWorking");
+        when(payrollService.updatePayroll(1,payrollDto)).thenReturn("success");
+        mockMvc.perform(MockMvcRequestBuilders
+                .put("/payroll/employee/1")
+                .content("{\"name\":\"Manu\",\"gender\":\"M\",\"salary\":\"120000\",\"imagePath\":\"pic.jpg\"," +
+                        "\"department\":\"CS\",\"notes\":\"HardWorking\"}")
+                .contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(status().isOk());
+    }
 }
