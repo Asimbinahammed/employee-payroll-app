@@ -41,11 +41,17 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto);
         PayrollDto payrollDto2 = new PayrollDto();
         payrollDto2.setName("Messi");
         payrollDto2.setGender("M");
         payrollDto2.setSalary(524000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto2);
 
         List<EmployeePayroll> payrollList = new ArrayList<>();
@@ -54,6 +60,9 @@ public class PayrollServicesTest {
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
         payrollList.add(employeePayroll);
         EmployeePayroll payroll2 = new EmployeePayroll();
@@ -79,12 +88,18 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
         employeePayroll.setId(1);
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(modelMapper.map(payrollDto, EmployeePayroll.class)).thenReturn(employeePayroll);
@@ -102,12 +117,18 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
         employeePayroll.setId(1);
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("M");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
@@ -127,12 +148,18 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
         employeePayroll.setId(1);
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("M");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.empty());
@@ -147,12 +174,18 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
         employeePayroll.setId(1);
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
@@ -168,12 +201,18 @@ public class PayrollServicesTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
         employeePayroll.setId(1);
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
@@ -190,6 +229,9 @@ public class PayrollServicesTest {
         employeePayroll.setName("Asim Ahammed");
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment("IT");
+        employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));

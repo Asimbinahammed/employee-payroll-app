@@ -1,0 +1,320 @@
+2021-12-14 01:18:19:673 [INFO] [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 01:18:19:704 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2021-12-14 01:18:19:720 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2021-12-14 22:13:20:176 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 16460 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:13:20:177 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:635] No active profile set, falling back to default profiles: default
+2021-12-14 22:13:21:493 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:13:21:611 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:13:21:920 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:13:21:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:13:21:960 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:21:965 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:21:965 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:21:965 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:13:21:965 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:21:965 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:22:020 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:13:22:885 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:13:22:918 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:13:22:922 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:13:23:050 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:13:23:050 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2739 ms
+2021-12-14 22:13:23:139 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-14 22:13:23:144 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-14 22:13:23:199 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 22:13:23:224 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-12-14 22:13:34:863 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 19832 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:13:34:868 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:639] The following profiles are active: dev
+2021-12-14 22:13:35:795 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:13:35:870 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:13:36:164 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:13:36:194 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:36:199 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:36:254 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:13:36:899 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:13:36:909 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:13:36:909 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:13:37:009 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:13:37:009 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2076 ms
+2021-12-14 22:13:37:084 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-14 22:13:37:089 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-14 22:13:37:099 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:13:37:134 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:13:37:134 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.password' to java.lang.String
+2021-12-14 22:13:37:144 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-14 22:13:37:169 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 22:13:37:194 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.password' to java.lang.String:
+
+    Reason: java.lang.IllegalStateException: either 'jasypt.encryptor.password' or one of ['jasypt.encryptor.private-key-string', 'jasypt.encryptor.private-key-location'] must be provided for Password-based or Asymmetric encryption
+
+Action:
+
+Update your application's configuration
+
+2021-12-14 22:13:52:821 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 17956 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:13:52:826 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:639] The following profiles are active: dev
+2021-12-14 22:13:53:730 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:13:53:800 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:13:54:085 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:13:54:115 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:54:120 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:13:54:170 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:13:54:824 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:13:54:834 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:13:54:834 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:13:54:949 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:13:54:949 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2051 ms
+2021-12-14 22:13:55:009 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-14 22:13:55:014 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-14 22:13:55:024 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:13:55:029 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:13:55:034 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.password' to java.lang.String
+2021-12-14 22:13:55:039 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-14 22:13:55:059 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 22:13:55:084 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.password' to java.lang.String:
+
+    Reason: java.lang.IllegalStateException: either 'jasypt.encryptor.password' or one of ['jasypt.encryptor.private-key-string', 'jasypt.encryptor.private-key-location'] must be provided for Password-based or Asymmetric encryption
+
+Action:
+
+Update your application's configuration
+
+2021-12-14 22:16:15:483 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 19148 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:16:15:483 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:639] The following profiles are active: dev
+2021-12-14 22:16:16:435 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:16:16:482 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:16:16:748 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:16:795 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:16:841 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:16:17:498 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:16:17:513 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:16:17:513 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:16:17:638 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:16:17:638 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2085 ms
+2021-12-14 22:16:17:730 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-14 22:16:17:730 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-14 22:16:17:746 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2021-12-14 22:16:17:808 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2021-12-14 22:16:18:090 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.password' to java.lang.String
+2021-12-14 22:16:18:090 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-14 22:16:18:105 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 22:16:18:137 [ERROR] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.password' to java.lang.String:
+
+    Reason: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.password' to java.lang.String
+
+Action:
+
+Update your application's configuration
+
+2021-12-14 22:16:43:986 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 10760 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:16:43:986 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:639] The following profiles are active: dev
+2021-12-14 22:16:44:836 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:16:44:914 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:16:45:195 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:45:226 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:16:45:289 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:16:45:992 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:16:46:007 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:16:46:007 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:16:46:117 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:16:46:117 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2055 ms
+2021-12-14 22:16:46:179 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-14 22:16:46:179 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-14 22:16:46:195 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:16:46:195 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2021-12-14 22:16:46:210 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2021-12-14 22:16:46:648 [INFO] [main] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 22:16:46:773 [INFO] [main] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-14 22:16:46:960 [INFO] [main] [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-14 22:16:47:101 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2021-12-14 22:16:47:101 [WARN] [main] [com.zaxxer.hikari.util.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-14 22:16:47:835 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2021-12-14 22:16:47:866 [INFO] [main] [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-14 22:16:48:819 [INFO] [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 22:16:48:835 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 22:16:49:381 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 22:16:49:913 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-14 22:16:49:928 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 6.557 seconds (JVM running for 7.054)
+2021-12-14 22:19:53:327 [INFO] [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 22:19:53:327 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2021-12-14 22:19:53:343 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2021-12-14 22:20:02:359 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17 on DESKTOP-2I0J1B5 with PID 14728 (D:\eclipse\nmbvc\CFP\employee-payroll-app\target\classes started by Asim in D:\eclipse\nmbvc\CFP\employee-payroll-app)
+2021-12-14 22:20:02:359 [INFO] [main] [com.bridgelabz.employeepayroll.EmployeePayrollApplication:639] The following profiles are active: dev
+2021-12-14 22:20:03:502 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 22:20:03:564 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2021-12-14 22:20:03:845 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:20:03:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-12-14 22:20:03:939 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-12-14 22:20:04:611 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2021-12-14 22:20:04:627 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2021-12-14 22:20:04:627 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 22:20:04:783 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2021-12-14 22:20:04:783 [INFO] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2362 ms
+2021-12-14 22:20:04:861 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-12-14 22:20:04:861 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-12-14 22:20:04:861 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor:37] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2021-12-14 22:20:04:877 [INFO] [main] [com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder:81] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2021-12-14 22:20:05:080 [INFO] [main] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 22:20:05:158 [INFO] [main] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-14 22:20:05:345 [INFO] [main] [org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-14 22:20:05:455 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2021-12-14 22:20:05:455 [WARN] [main] [com.zaxxer.hikari.util.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-14 22:20:05:767 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2021-12-14 22:20:05:798 [INFO] [main] [org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-14 22:20:06:501 [INFO] [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 22:20:06:517 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 22:20:07:111 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 22:20:07:564 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-14 22:20:07:564 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:120] Context refreshed
+2021-12-14 22:20:07:579 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:123] Found 1 custom documentation plugin(s)
+2021-12-14 22:20:07:642 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+2021-12-14 22:20:07:642 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 22:20:07:642 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2021-12-14 22:20:07:657 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2021-12-14 22:20:07:673 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2021-12-14 22:20:07:689 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 22:20:07:720 [ERROR] [main] [org.springframework.boot.SpringApplication:819] Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.bridgelabz.employeepayroll.EmployeePayrollApplication.main(EmployeePayrollApplication.java:14)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:38)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1233)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:817)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:52)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:102)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$1.apply(DocumentationPluginsBootstrapper.java:99)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators$5.hasNext(Iterators.java:548)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:268)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:226)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:373)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:92)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:81)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted

@@ -28,4 +28,8 @@ public class EmployeePayroll {
     @CreationTimestamp
     private LocalDateTime Start;
 
+    private String imagePath;
+    private String department;
+    private String notes;
+
 }

@@ -36,11 +36,17 @@ public class PayrollControllerTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(23455);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto);
         PayrollDto payrollDto2 = new PayrollDto();
         payrollDto2.setName("Siva");
         payrollDto2.setGender("M");
         payrollDto2.setSalary(3456);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto2);
         when(payrollServices.getAllPayroll()).thenReturn(payrollDtoList);
         List<PayrollDto> actualResponse = payrollController.getAllPayroll();
@@ -58,6 +64,9 @@ public class PayrollControllerTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(23455);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         when(payrollServices.addPayroll(payrollDto)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.addPayroll(payrollDto);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
@@ -72,6 +81,9 @@ public class PayrollControllerTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(23455);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         when(payrollServices.updatePayroll(id, payrollDto)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.updatePayroll(id, payrollDto);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
@@ -86,6 +98,9 @@ public class PayrollControllerTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(23455);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         when(payrollServices.getPayroll(id)).thenReturn(payrollDto);
         when(payrollServices.deletePayroll(id)).thenReturn(successMessage);
         ResponseEntity responseEntity = payrollController.deletePayroll(id);
@@ -100,6 +115,9 @@ public class PayrollControllerTest {
         payrollDto.setName("Asim Ahammed");
         payrollDto.setGender("M");
         payrollDto.setSalary(23455);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment("IT");
+        payrollDto.setNotes("Excellent worker");
         when(payrollServices.getPayroll(id)).thenReturn(payrollDto);
         ResponseEntity responseEntity = payrollController.getPayroll(id);
         Assertions.assertEquals(successMessage, responseEntity.getMessage());
