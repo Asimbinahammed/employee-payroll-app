@@ -2,8 +2,6 @@ package com.bridgelabz.employeepayroll.integration;
 
 import com.bridgelabz.employeepayroll.controller.PayrollController;
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
-import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
-import com.bridgelabz.employeepayroll.repository.PayrollRepository;
 import com.bridgelabz.employeepayroll.services.PayrollServices;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,8 +14,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
+
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -45,10 +44,23 @@ public class PayrollControllerIntegrationTest {
         when(payrollService.addPayroll(any())).thenReturn("success");
         mockMvc.perform(MockMvcRequestBuilders
                         .post("/payroll/employee")
-                .content("{\"name\":\"Manu\",\"gender\":\"M\",\"salary\":\"120000\",\"imagePath\":\"asdf.png\"," +
-                        "\"department\":\"CS\",\"notes\":\"HardWorking\"}")
-                .contentType(MediaType.APPLICATION_JSON_VALUE))
+                        .content("{\"name\":\"Asim\",\"gender\":\"M\"," +
+                                "\"salary\":800000,\"department\":[\"JavaDeveloper\",\"Manager\"]," +
+                                "\"notes\":\"Reliable\",\"imagePath\":\"image1.jpg\"}")
+                                .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    void givenWrongInputAsContent_whenCalledAddPayrollTest_shouldReturnBadReqest() throws Exception {
+        when(payrollService.addPayroll(any())).thenReturn("success");
+        mockMvc.perform(MockMvcRequestBuilders
+                        .post("/payroll/employee")
+                        .content("{\"name\":\"Asim3\",\"gender\":\"M\"," +
+                                "\"salary\":800000,\"department\":[\"JavaDeveloper\",\"Manager\"]," +
+                                "\"notes\":\"Reliable\",\"imagePath\":\"image1.jpg\"}")
+                        .contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(status().isBadRequest());
     }
 
     @Test
@@ -59,15 +71,36 @@ public class PayrollControllerIntegrationTest {
         payrollDto.setGender("M");
         payrollDto.setSalary(120000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("CS");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("HardWorking");
         when(payrollService.updatePayroll(id,payrollDto)).thenReturn("success");
         mockMvc.perform(MockMvcRequestBuilders
                 .put("/payroll/employee/1")
-                .content("{\"name\":\"Manu\",\"gender\":\"M\",\"salary\":\"120000\",\"imagePath\":\"pic.jpg\"," +
-                        "\"department\":\"CS\",\"notes\":\"HardWorking\"}")
-                .contentType(MediaType.APPLICATION_JSON_VALUE))
+                        .content("{\"name\":\"Asim\",\"gender\":\"M\"," +
+                                "\"salary\":800000,\"department\":[\"JavaDeveloper\",\"Manager\"]," +
+                                "\"notes\":\"Reliable\",\"imagePath\":\"image1.jpg\"}")
+                        .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    void givenWrongInputAsContent_whenCalledUpdatePayrollTest_shouldReturnBadReqest() throws Exception {
+        PayrollDto payrollDto = new PayrollDto();
+        int id = 1;
+        payrollDto.setName("Manu");
+        payrollDto.setGender("M");
+        payrollDto.setSalary(120000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment((List.of("CS")));
+        payrollDto.setNotes("HardWorking");
+        when(payrollService.updatePayroll(id,payrollDto)).thenReturn("success");
+        mockMvc.perform(MockMvcRequestBuilders
+                        .put("/payroll/employee/1")
+                        .content("{\"name\":\"Asim2\",\"gender\":\"M\"," +
+                                "\"salary\":800000,\"department\":[\"JavaDeveloper\",\"Manager\"]," +
+                                "\"notes\":\"Reliable\",\"imagePath\":\"image1.jpg\"}")
+                        .contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(status().isBadRequest());
     }
 
     @Test
@@ -87,7 +120,7 @@ public class PayrollControllerIntegrationTest {
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
         when(payrollService.getPayroll(id)).thenReturn(payrollDto);
         mockMvc.perform(MockMvcRequestBuilders

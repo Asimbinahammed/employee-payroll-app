@@ -1,10 +1,9 @@
-package com.bridgelabz.employeepayroll.service;
+package com.bridgelabz.employeepayroll.services;
 
 import com.bridgelabz.employeepayroll.builder.PayrollBuilder;
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
 import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
 import com.bridgelabz.employeepayroll.repository.PayrollRepository;
-import com.bridgelabz.employeepayroll.services.PayrollServices;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -42,7 +41,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto);
         PayrollDto payrollDto2 = new PayrollDto();
@@ -50,7 +49,7 @@ public class PayrollServicesTest {
         payrollDto2.setGender("M");
         payrollDto2.setSalary(524000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
         payrollDtoList.add(payrollDto2);
 
@@ -61,7 +60,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
         payrollList.add(employeePayroll);
@@ -71,7 +70,7 @@ public class PayrollServicesTest {
         payroll2.setGender("M");
         payroll2.setSalary(524000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         payroll2.setStart(LocalDateTime.now());
         payrollList.add(payroll2);
@@ -85,6 +84,13 @@ public class PayrollServicesTest {
     }
 
     @Test
+    void WhenFindEmployeeDetailsByIdCalled_ThenIfIdIsNotFound_ShouldThrowException() {
+        int id = 1;
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.findDetails(id));
+    }
+
+    @Test
     void givenPayrollDto_whenCalledAddPayroll_shouldReturnSuccessMessage() {
         String successMessage = "ADDED payroll into database";
         PayrollDto payrollDto = new PayrollDto();
@@ -92,7 +98,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
@@ -101,7 +107,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
@@ -121,7 +127,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("M");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
@@ -130,7 +136,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("M");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
@@ -152,7 +158,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("M");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
@@ -161,7 +167,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("M");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
@@ -178,7 +184,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
@@ -187,7 +193,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
@@ -198,6 +204,25 @@ public class PayrollServicesTest {
     }
 
     @Test
+    void givenIdAndPayrollDto_whenCalledDeletePayroll_shouldThrowEntityNotFoundException() {
+        int id = 1;
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("F");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment((List.of("CS")));
+        employeePayroll.setNotes("Excellent worker");
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        verify(payrollRepository, times(0)).delete(employeePayroll);
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.deletePayroll(id));
+    }
+
+    @Test
     void givenId_whenCalledGetPayroll_shouldReturnPayrollDto() {
         int id = 1;
         PayrollDto payrollDto = new PayrollDto();
@@ -205,7 +230,7 @@ public class PayrollServicesTest {
         payrollDto.setGender("F");
         payrollDto.setSalary(321000);
         payrollDto.setImagePath("./pic.jpg");
-        payrollDto.setDepartment("IT");
+        payrollDto.setDepartment((List.of("CS")));
         payrollDto.setNotes("Excellent worker");
 
         EmployeePayroll employeePayroll = new EmployeePayroll();
@@ -214,7 +239,7 @@ public class PayrollServicesTest {
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
@@ -222,6 +247,31 @@ public class PayrollServicesTest {
         when(modelMapper.map(employeePayroll, PayrollDto.class)).thenReturn(payrollDto);
         PayrollDto actualMessage = payrollServices.getPayroll(id);
         Assertions.assertEquals(payrollDto, actualMessage);
+    }
+
+    @Test
+    void givenId_whenCalledGetPayroll_shouldThrowEntityNotFoundException() {
+        int id = 1;
+        PayrollDto payrollDto = new PayrollDto();
+        payrollDto.setName("Asim Ahammed");
+        payrollDto.setGender("F");
+        payrollDto.setSalary(321000);
+        payrollDto.setImagePath("./pic.jpg");
+        payrollDto.setDepartment((List.of("CS")));
+        payrollDto.setNotes("Excellent worker");
+
+        EmployeePayroll employeePayroll = new EmployeePayroll();
+        employeePayroll.setId(1);
+        employeePayroll.setName("Asim Ahammed");
+        employeePayroll.setGender("F");
+        employeePayroll.setSalary(321000);
+        employeePayroll.setImagePath("./pic.jpg");
+        employeePayroll.setDepartment((List.of("CS")));
+        employeePayroll.setNotes("Excellent worker");
+        employeePayroll.setStart(LocalDateTime.now());
+
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.getPayroll(id));
     }
 
     @Test
@@ -233,12 +283,19 @@ public class PayrollServicesTest {
         employeePayroll.setGender("F");
         employeePayroll.setSalary(321000);
         employeePayroll.setImagePath("./pic.jpg");
-        employeePayroll.setDepartment("IT");
+        employeePayroll.setDepartment((List.of("CS")));
         employeePayroll.setNotes("Excellent worker");
         employeePayroll.setStart(LocalDateTime.now());
 
         when(payrollRepository.findById(id)).thenReturn(Optional.of(employeePayroll));
         EmployeePayroll actualResult = payrollServices.findDetails(id);
         Assertions.assertEquals(employeePayroll, actualResult);
+    }
+
+    @Test
+    void givenId_whenCalledFindDetails_shouldThrowEntityNotFoundException() {
+        int id = 1;
+        when(payrollRepository.findById(id)).thenReturn(Optional.empty());
+        Assertions.assertThrows(EntityNotFoundException.class, () -> payrollServices.findDetails(id));
     }
 }

@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Purpose : To declare inputs for connecting with database.
@@ -27,9 +28,10 @@ public class EmployeePayroll {
     private long salary;
     @CreationTimestamp
     private LocalDateTime Start;
-
     private String imagePath;
-    private String department;
+    @ElementCollection
+    @CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "id"))
+    private List<String> department;
     private String notes;
 
 }

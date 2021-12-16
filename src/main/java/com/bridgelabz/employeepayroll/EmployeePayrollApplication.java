@@ -7,7 +7,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableEncryptableProperties
-@EnableSwagger2
 public class EmployeePayrollApplication {
 
 	public static void main(String[] args) {

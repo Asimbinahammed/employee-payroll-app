@@ -4,6 +4,7 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 /**
  * Purpose : To declare input and their regex for validations.
@@ -28,14 +29,10 @@ public class PayrollDto {
 
     @NotNull
     private long salary;
-//    @Pattern(regexp = "  ([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)",
-//            message = "image path  contains file location of image")
     @NotNull
     private String imagePath;
-    @Pattern(regexp = "[a-zA-Z]+[\\s]?[a-zA-Z ]+$",
-            message = "Department Only contains alphabets")
     @NotNull
-    private String department;
+    private List<String> department;
     @NotNull
     private String notes;
 
