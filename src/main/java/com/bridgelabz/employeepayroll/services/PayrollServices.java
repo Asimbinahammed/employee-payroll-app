@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * @since 2021-12-03
  */
 @Service
-public class PayrollServices {
+public class PayrollServices implements IPayrollServices{
 
     @Autowired
     private PayrollRepository payrollRepository;

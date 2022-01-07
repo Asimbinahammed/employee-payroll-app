@@ -52,7 +52,7 @@ public class PayrollControllerIntegrationTest {
     }
 
     @Test
-    void givenWrongInputAsContent_whenCalledAddPayrollTest_shouldReturnBadReqest() throws Exception {
+    void givenWrongInputAsContent_whenCalledAddPayroll_shouldReturnBadRequest() throws Exception {
         when(payrollService.addPayroll(any())).thenReturn("success");
         mockMvc.perform(MockMvcRequestBuilders
                         .post("/payroll/employee")
@@ -84,7 +84,7 @@ public class PayrollControllerIntegrationTest {
     }
 
     @Test
-    void givenWrongInputAsContent_whenCalledUpdatePayrollTest_shouldReturnBadReqest() throws Exception {
+    void givenWrongInputAsContent_whenCalledUpdatePayroll_shouldReturnBadRequest() throws Exception {
         PayrollDto payrollDto = new PayrollDto();
         int id = 1;
         payrollDto.setName("Manu");

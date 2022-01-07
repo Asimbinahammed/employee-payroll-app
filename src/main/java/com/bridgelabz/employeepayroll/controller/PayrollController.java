@@ -3,6 +3,7 @@ package com.bridgelabz.employeepayroll.controller;
 import com.bridgelabz.employeepayroll.dto.PayrollDto;
 import com.bridgelabz.employeepayroll.entity.EmployeePayroll;
 import com.bridgelabz.employeepayroll.entity.ResponseEntity;
+import com.bridgelabz.employeepayroll.services.IPayrollServices;
 import com.bridgelabz.employeepayroll.services.PayrollServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,7 @@ import java.util.List;
  * @version : 0.0.1-SNAPSHOT
  * @since 2021-12-03
  */
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping(value = "/payroll")
 public class PayrollController {
@@ -24,7 +26,7 @@ public class PayrollController {
     public String getAddressMessage = "The address for the given id is here : ";
 
     @Autowired
-    private PayrollServices payrollServices;
+    private IPayrollServices payrollServices;
 
     /**
      * Purpose : To print welcome message.

@@ -4,6 +4,7 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -22,8 +23,8 @@ public class PayrollDto {
     private String name;
 
     @NotNull
-    @Size(min = 1,max = 1, message = "Name should have only 1 character")
-    @Pattern(regexp = "[F|f|M|m|o|O]$",
+    @Size(min = 1,max = 1, message = "Name should have only letters")
+    @Pattern(regexp = "[Male|Female]$",
             message = "Name Only contain gender alphabet")
     private String gender;
 
